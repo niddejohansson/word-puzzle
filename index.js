@@ -48,6 +48,8 @@ function wordFilter() {
     }
     if(counter > 1) {
         console.log("too many changes")
+        showPickedWord.innerHTML = "The word " + pickedWord.value + " contains more than one change";
+
         
     }else {
         console.log("rätt!")
@@ -69,16 +71,19 @@ function checkOption() {
         wordLenght = 3;
         startWord = "eye"
         endWord = "lid"
+        allWordArray.push("eye");
         showPickedListWord.innerHTML = "Go from EYE to LID"
     } else if(wordOptions.value == "tigerroses") {
         wordLenght = 5;
         startWord = "tiger"
         endWord = "roses"
+        allWordArray.push("tiger");
         showPickedListWord.innerHTML = "Go from TIGER to ROSES"
     } else if(wordOptions.value == "wheatbread") {
         wordLenght = 5;
         startWord = "wheat"
         endWord = "bread"
+        allWordArray.push("wheat");
         showPickedListWord.innerHTML = "Go from WHEAT to BREAD"
     } else {
         showPickedListWord.innerHTML = "Pick words in the list above"

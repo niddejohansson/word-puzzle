@@ -7,6 +7,7 @@ let showPickedWord = document.getElementById("showPickedWord");
 let showPickedListWord = document.getElementById("showPickedListWord")
 let wordList = document.getElementById("wordList");
 let wordOptions = document.getElementById("wordOptions");
+let restartButton = document.getElementById("restartButton")
 let wordLenght;
 let lastPickedWord;
 let letterArray = "";
@@ -126,3 +127,4 @@ function updateUi() {
 
 pickedWordButton.addEventListener("click", () => lookUpWord());
 wordOptions.addEventListener("change", () => checkOption());
+restartButton.addEventListener("click", () => location.reload());
